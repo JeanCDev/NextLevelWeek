@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta tags de busca -->
+    <meta name="descricao" content="">
+    <meta name="author" content="Jean Carlos Gomes">
+
+
+    <!--Estilo Personalizado-->
+    <link rel="stylesheet" href="css/main.css">
+    {% block styles %}{% endblock styles %}
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Babel/Converte ES6 para ES5 -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- 
+    Tag padrão do babel: <script type="text/babel"></script> 
+    -->
+    {% block title %}
+        <title>Ecoleta</title>
+    {% endblock title %}
+    
+</head>
+
+<body>
+
+    <div id="{{bodyId}}">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    
+    {% block modal %}
+    {% endblock modal %}
+
+    {% block scripts %}
+    {% endblock scripts %}
+
+</body>
+
+</html>
